@@ -37,6 +37,10 @@ body {
     background-repeat: no-repeat;
 }
 
+header {
+    margin: 0 0 1rem 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Unbounded', cursive;
 }
@@ -48,6 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .app__section-banner-container {
+    height: 29rem;
     width: 99rem;
     margin: 0 auto;
     display: flex;
@@ -59,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .app__title {
     line-height: 150%;
-    font-size: 5.2rem;
+    font-size: 4rem;
     font-style: normal;
     color: var(--color-secondary);
     font-weight: 200;
@@ -68,6 +73,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .app__title-strong {
     font-weight: 600;
+}
+
+.app__image {
+    width: 33rem;
+    height: auto;
 }
 
 .app__section-card-container {
