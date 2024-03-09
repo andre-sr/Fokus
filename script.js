@@ -17,7 +17,7 @@ const beepSound = new Audio ('/sons/beep.mp3')
 const musica = new Audio('/sons/luna-rise-part-one.mp3')
 musica.loop = true
 
-let tempoDecorridoEmSegundos = 15
+let tempoDecorridoEmSegundos = 1500
 let intervaloId = null
 
 musicaFocoInput.addEventListener('change', () => {
@@ -29,19 +29,19 @@ musicaFocoInput.addEventListener('change', () => {
 })
 
 focoBt.addEventListener('click', () => {
-    tempoDecorridoEmSegundos = 15
+    tempoDecorridoEmSegundos = 1500
     alterarContexto('foco')
     focoBt.classList.add('active')
 })
 
 curtoBt.addEventListener('click', () => {
-    tempoDecorridoEmSegundos = 15
+    tempoDecorridoEmSegundos = 900
     alterarContexto('descanso-curto')
     curtoBt.classList.add('active')
 })
 
 longoBt.addEventListener('click', () => {
-    tempoDecorridoEmSegundos = 15
+    tempoDecorridoEmSegundos = 300
     alterarContexto('descanso-longo')
     longoBt.classList.add('active')
 })
